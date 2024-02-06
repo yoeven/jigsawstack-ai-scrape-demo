@@ -8,8 +8,16 @@ supabase functions new ai-scraper
 
 ## Update secrets
 
-supabase secrets set --env-file ./supabase/functions/.env --project-ref <project_ref>
+supabase secrets set --env-file ./supabase/functions/.env --project-ref
+<project_ref>
 
 ## Deploy function
 
-supabase functions deploy ai-scraper-demo --project-ref <project_ref> --no-verify-jwt
+supabase functions deploy ai-scraper-demo --project-ref <project_ref>
+--no-verify-jwt
+
+## Run locally
+
+supabase start
+
+supabase functions serve --no-verify-jwt
