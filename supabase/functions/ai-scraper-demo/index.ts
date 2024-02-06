@@ -7,7 +7,6 @@ Deno.serve(async (req) => {
     const resp = await fetch("https://api.jigsawstack.com/v1/ai/scrape", {
       body: JSON.stringify({
         url,
-        // elements: selectors.map((s: string) => ({ selector: s })),
         element_prompts: selectors,
       }),
       headers: {
